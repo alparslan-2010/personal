@@ -7,32 +7,31 @@ import Home from './pages/home';
 import Project from './pages/project';
 import Resume from './pages/resume';
 
+//linki kulnamk icin linki import et
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
 
-    return (
-    
-    
+  return (
     <>
 
 
-     <Header/>
-    
-        <Router>
+      <Header />
 
-      <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/resume' element={<Resume />} />
-        <Route path='/projects' element={<Project/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+      <Router>
+        <Routes>
+          <Route path='/home' element={<Home />} />
+          <Route path='/resume' element={<Resume />} />
+          <Route path='/projects' element={<Project />} />
+          <Route path='/contact' element={<Contact />} />
 
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
 
-    <Footer/>
+      <Footer />
     </>
-    )
+  )
 }
 
 export default App;
